@@ -26,3 +26,7 @@ def extractor():
         results, n_of_records = NER(text,choice).process_text()
 
         return render_template("index.html", results=results, num_of_results = n_of_records)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

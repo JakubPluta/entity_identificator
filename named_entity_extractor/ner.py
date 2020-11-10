@@ -27,7 +27,7 @@ class NER:
         self.nlp = en_core_web_sm.load()
 
     def process_text(self):
-        document = self.nlp(text)
+        document = self.nlp(self.text)
         data = []
         for entity in document.ents:
             data.append((entity.label_, entity.text))
@@ -40,4 +40,6 @@ class NER:
         if self.choice in self.results:
             result = self.results[self.choice]
             return result, len(result)
+        else:
+            return None, 0
 
