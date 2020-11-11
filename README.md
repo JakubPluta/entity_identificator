@@ -20,7 +20,7 @@ pip install requirements.txt
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-`python app.py`
-
+```sh
+python app.py
+```
 
